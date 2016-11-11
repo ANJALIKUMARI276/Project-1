@@ -1,0 +1,182 @@
+<div class="container">
+
+   <div class="row">
+  <div class="col-md-12">
+  <form>
+        <table class="table">
+
+
+              <tr>
+                <td>  <h2 style=" padding: 1em;
+                      background: #aaa;
+                    color:white;
+                    clear: left;
+                    text-align: center;">
+                    MAKE PAYMENT FOR MOVIE: {{movie}}
+                    </h2>
+                </td>
+
+                </tr>
+
+                </table>
+                </form>
+
+   </div>
+
+ </div>
+
+
+  <div class="row">
+  <div class="col-md-12">
+   <div class="jumbotron">
+
+   <div class="panel panel-default credit-card-box">
+
+
+                    <div class="panel-heading display-table" >
+                        <div class="row display-tr" >
+                        <h3 class="text-center" >ENTER YOUR PERSONAL DETAILS</h3>
+                    <div class="display-td" >
+
+                    </div>
+                    </div>
+                    </div>
+  <form>
+        <table class="table">
+
+
+
+             <tr>
+                         <td>  <label>ENTER YOUR NAME</label>
+
+                          <input type="text" class="form-control" placeholder="Enter NAME" id="cust_name"  required="true"/>
+                         </td>
+                         <td>  <label >ENTER YOUR EMAIL</label>
+
+                          <input type="text" class="form-control" placeholder="Enter EMAIL" id="cust_email"  required="true"/>
+                         </td>
+
+                     </tr>
+
+                </table>
+                </form>
+</div>
+   </div>
+</div>
+ </div>
+
+
+
+
+
+
+<div class="row">
+    <div class="col-sm-8">
+         <div class="jumbotron">
+              <div class="panel panel-default credit-card-box">
+
+
+                    <div class="panel-heading display-table" >
+                        <div class="row display-tr" >
+                        <h3 class="text-center" >Payment Details</h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img class="img-responsive center-block" src="img/pic.png">
+
+                    </div>
+                    </div>
+
+                <div class="panel-body">
+                <form role="form" id="payment-form" >
+                <div class="row">
+                <div class="col-xs-12">
+                <div class="form-group">
+                <label for="cardNumber">CARD NUMBER</label>
+                <div class="input-group">
+                <input type="text" class="form-control" placeholder="Enter Card Number"  required/>
+                <span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+                </div>
+                </div>
+                </div>
+                </div>
+
+                <div class="row">
+                <div class="col-xs-7 col-md-7">
+                <div class="form-group">
+                <label for="cardExpiry"><span class="hidden-xs">EXPIRATION</span><span class="visible-xs-inline">EXP</span> DATE</label>
+                <input type="date" class="form-control" placeholder="" required="true"/>
+                </div>
+                </div>
+                <div class="col-xs-5 col-md-5 pull-right">
+                <div class="form-group">
+                <label for="cardCVC">CVV CODE</label>
+                <input type="text" class="form-control" placeholder="Enter CVV" required="true"/>
+
+                </div>
+                </div>
+                </div>
+                <br>
+
+
+                        <div class="row">
+                        <div class="col-xs-12">
+                        <button class="btn btn-info btn-lg btn-block" ng-click="addbooking()" type="submit">PROCEED</button>
+
+                        </div>
+                        </div>
+
+                </form >
+
+
+
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+
+
+<div class="center-block row col-md-4 col-sm-8" >
+    <div class="jumbotron">
+          <table class = "table">
+
+          <thead>
+          <tr>
+            <td colspan="3"><h3>You Booked</h3></td>
+          </tr>
+        </thead>
+          <tr>
+            <td><span>No. of seat selected : </span></td>
+            <td  ng-model="contact.NoOfSeats" contenteditable='false'>{{seatcount11}}</td>
+          </tr>
+          <tr>
+            <td>Class : </td>
+            <td><span id="seatclass">GOLD</span></td>
+          </tr>
+          <tr>
+            <td>Seat No : </td>
+            <td><span >{{seatno111}}</span></td>
+          </tr>
+          <tr>
+            <td>Sub Total : </td>
+            <td><span>{{subtotal11}}</span></td>
+          </tr>
+          <tr>
+            <td>Movie : </td>
+            <td><span >{{movie}}</span></td>
+          </tr>
+          <tr>
+            <td>Theatre : </td>
+            <td><span>{{SelectTheatre}}</span></td>
+          </tr>
+          <tr>
+            <td>Time Slot : </td>
+            <td><span>{{SelectTime}}</span></td>
+          </tr>
+
+       </table>
+       </div>
+        </div>
+
+</div>

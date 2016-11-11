@@ -1,0 +1,114 @@
+
+
+
+
+
+
+
+
+ <div class="container">
+<h1>Search Movies</h1>
+<br>
+<form class="form" ng-submit="getdata()">
+    <label>Movie Name</label>
+    <p class="input-group">
+      <input type="text" class="form-control" placeholder="Movie Name." ng-model="Title" required>
+      </p>
+      <label>Year</label>
+    <p class="input-group">
+      <input type="text" class="form-control" placeholder="Year" ng-model="Year" >
+      </p>
+
+      <div>
+          <button type="submit" class="btn btn-primary" ng-disabled="disabled">Search</button>
+
+
+
+      </div>
+
+
+  </form>
+<br>
+<br>
+
+
+
+<div class="row">
+    <div class="col-lg-12">
+      <h1 >Add Movies</h1>
+      <table class="table">
+
+        <tr>
+        <th>Movie</th>
+        <th>Year</th>
+        <th>language</th>
+          <th>Poster</th>
+
+
+      </tr><tbody>
+
+    <tr>
+
+            <td>{{getmovie.Title}}</td>
+        <td>{{getmovie.Year}}</td>
+        <td>{{getmovie.Language}}</td>
+       <td><img className="thumbnail" height="128" width="128" src={{getmovie.Poster}}></td>
+
+
+
+        <td><button type="submit" class="btn btn-danger" ng-click="addmovie()">add movie</button></td>
+
+
+
+
+ 		</tr>
+    </tbody>
+
+    </table>
+    </div>
+  </div>
+
+  </div>
+  <br>
+  <br>
+
+
+
+
+
+<div class="row">
+    <div class="col-lg-12">
+      <h1 >Show Movies</h1>
+      <table class="table">
+
+        <tr>
+        <th>Movie</th>
+        <th>Year</th>
+        <th>language</th>
+          <th>Poster</th>
+
+
+      </tr><tbody>
+
+    <tr>
+        <tr ng-repeat=" t in movieData" >
+            <td>{{t.Title}}</td>
+        <td>{{t.Year}}</td>
+        <td>{{t.Language}}</td>
+       <td><img className="thumbnail" height="128" width="128" src={{t.Poster}}></td>
+
+
+
+        <td><button type="submit" class="btn btn-danger" ng-click="deletemovie(t)">Delete</button></td>
+
+
+
+
+ 		</tr>
+    </tbody>
+
+    </table>
+    </div>
+  </div>
+
+  </div>
